@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RAÚL REVIDIEGO // DATA ANALYST · ML ENGINEER</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ░░ SCANLINE OVERLAY ░░ -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ░░ BOOT SCREEN ░░ -->
+  <div id="boot-screen">
+    <div class="boot-content">
+      <p class="boot-line" id="b1">SISTEMA INICIALIZANDO...</p>
+      <p class="boot-line" id="b2">CARGANDO MÓDULOS DE ANÁLISIS...   <span class="ok">[OK]</span></p>
+      <p class="boot-line" id="b3">VERIFICANDO PYTHON ENV v3.12...   <span class="ok">[OK]</span></p>
+      <p class="boot-line" id="b4">CONECTANDO NVIDIA NIM API...      <span class="ok">[OK]</span></p>
+      <p class="boot-line" id="b5">MONTANDO PORTFOLIO v2.6...        <span class="ok">[OK]</span></p>
+      <p class="boot-line" id="b6">BIENVENIDO, <span class="cyan">OPERATIVO</span></p>
+      <button id="enter-btn" style="display:none">[ ENTER SYSTEM ]</button>
+    </div>
+  </div>
+
+  <!-- ░░ MAIN PORTFOLIO ░░ -->
+  <div id="main" class="hidden">
+
+    <!-- NAV -->
+    <nav>
+      <span class="nav-logo">RR://</span>
+      <ul>
+        <li><a href="#sobre-mi"  class="nav-link">SOBRE_MI</a></li>
+        <li><a href="#skills"    class="nav-link">SKILLS</a></li>
+        <li><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
+        <li><a href="#educacion" class="nav-link">FORMACION</a></li>
+        <li><a href="#contacto"  class="nav-link">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <!-- ░░ HERO ░░ -->
+    <section id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">&gt; PERFIL CARGADO // CÁDIZ, ESP</p>
+        <h1 id="glitch-name" data-text="RAÚL REVIDIEGO">RAÚL REVIDIEGO</h1>
+        <p class="hero-role">DATA ANALYST · ML ENGINEER <span class="blink">_</span></p>
+        <p class="hero-sub">Python · FastAPI · LLM · RAG · TensorFlow · Power BI</p>
+        <div class="hero-cta">
+          <a href="#proyectos" class="btn-primary">VER PROYECTOS</a>
+          <a href="#contacto"  class="btn-ghost">CONTACTAR</a>
+        </div>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span> raul@portfolio:~</div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+    </section>
+
+    <!-- ░░ SOBRE MÍ ░░ -->
+    <section id="sobre-mi" class="section">
+      <div class="section-label">// 01 — SOBRE_MI</div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>
+            Estudiante de último año de Ingeniería Informática y cursando el Máster Evolve
+            Data Analyst, con fuerte orientación práctica hacia el análisis de datos,
+            el machine learning y la ingeniería de software.
+          </p>
+          <p>
+            Construyo proyectos reales: desde <span class="highlight">motores RAG con NVIDIA NIM</span>
+            hasta <span class="highlight">microservicios monitorizados en tiempo real</span> con FastAPI y WebSockets.
+          </p>
+          <p>
+            Mi enfoque ante cada reto: <span class="cyan">¿quién ya resolvió esto? ¿puedo mejorarlo?</span>
+            Pensamiento lateral, autonomía y búsqueda sistemática de soluciones.
+          </p>
+        </div>
+        <div class="stat-box">
+          <div class="stat-item">
+            <span class="stat-val cyan">8+</span>
+            <span class="stat-label">Proyectos reales</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val magenta">LLM</span>
+            <span class="stat-label">Llama 3.1 · RAG</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val yellow">∞</span>
+            <span class="stat-label">Curiosidad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ SKILLS ░░ -->
+    <section id="skills" class="section">
+      <div class="section-label">// 02 — SKILLS</div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">⬡</div>
+          <h3>LENGUAJES</h3>
+          <ul>
+            <li><span class="bar-label">Python (avanzado)</span><div class="bar"><div class="bar-fill" style="width:92%"></div></div></li>
+            <li><span class="bar-label">SQL</span><div class="bar"><div class="bar-fill" style="width:80%"></div></div></li>
+            <li><span class="bar-label">Bash</span><div class="bar"><div class="bar-fill" style="width:65%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>ML / IA</h3>
+          <ul>
+            <li><span class="bar-label">Scikit-learn</span><div class="bar"><div class="bar-fill magenta-fill" style="width:85%"></div></div></li>
+            <li><span class="bar-label">TensorFlow / Keras</span><div class="bar"><div class="bar-fill magenta-fill" style="width:78%"></div></div></li>
+            <li><span class="bar-label">RAG · LLM (NVIDIA NIM)</span><div class="bar"><div class="bar-fill magenta-fill" style="width:72%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">◉</div>
+          <h3>DATA & VIZ</h3>
+          <ul>
+            <li><span class="bar-label">Pandas / NumPy</span><div class="bar"><div class="bar-fill yellow-fill" style="width:90%"></div></div></li>
+            <li><span class="bar-label">Power BI</span><div class="bar"><div class="bar-fill yellow-fill" style="width:85%"></div></div></li>
+            <li><span class="bar-label">Matplotlib / Seaborn</span><div class="bar"><div class="bar-fill yellow-fill" style="width:82%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⬢</div>
+          <h3>BACKEND & DEVOPS</h3>
+          <ul>
+            <li><span class="bar-label">FastAPI · WebSockets</span><div class="bar"><div class="bar-fill" style="width:80%"></div></div></li>
+            <li><span class="bar-label">asyncio · Pydantic v2</span><div class="bar"><div class="bar-fill" style="width:82%"></div></div></li>
+            <li><span class="bar-label">Git · Linux · WSL2 · uv</span><div class="bar"><div class="bar-fill" style="width:78%"></div></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ░░ PROYECTOS ░░ -->
+    <section id="proyectos" class="section">
+      <div class="section-label">// 03 — PROYECTOS</div>
+
+      <!-- FILTROS -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">TODOS</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+        <button class="filter-btn" data-filter="backend">BACKEND</button>
+        <button class="filter-btn" data-filter="llm">LLM / RAG</button>
+        <button class="filter-btn" data-filter="viz">DATA</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!--
+        ╔══════════════════════════════════════════════════╗
+        ║  PLANTILLA DE PROYECTO — copia este bloque      ║
+        ╠══════════════════════════════════════════════════╣
+        ║  data-category → categoría para el filtro       ║
+        ║    opciones: ml · backend · llm · viz           ║
+        ║  proj-tag      → etiqueta visible               ║
+        ║  proj-date     → MES AÑO                        ║
+        ║  proj-title    → NOMBRE DEL PROYECTO            ║
+        ║  proj-desc     → descripción breve (2-3 líneas) ║
+        ║  proj-link     → URL del repositorio            ║
+        ║  proj-stack    → tecnologías (cada <span>)      ║
+        ╚══════════════════════════════════════════════════╝
+        -->
+
+        <!-- PROYECTO DESTACADO — Microservices Monitor -->
+        <div class="proj-card featured" data-category="backend">
+          <div class="proj-header">
+            <span class="proj-tag">BACKEND · REAL-TIME · OOP</span>
+            <span class="proj-date">2025 – HOY</span>
+          </div>
+          <div class="proj-featured-badge">★ PRINCIPAL</div>
+          <h3 class="proj-title">MICROSERVICES MONITOR</h3>
+          <p class="proj-desc">
+            Sistema de monitorización en tiempo real con arquitectura híbrida (OOP + funcional)
+            sobre FastAPI y WebSockets. Recolección asíncrona de métricas del sistema (CPU, RAM,
+            procesos) con psutil + asyncio. Motor de alertas con cooldown, auto-resolución y
+            patrón Observer.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego/microservices-monitor" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>FastAPI</span><span>WebSockets</span><span>asyncio</span><span>Pydantic v2</span><span>WSL2</span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 2 — NVIDIA NIM RAG -->
+        <div class="proj-card featured" data-category="llm">
+          <div class="proj-header">
+            <span class="proj-tag">LLM · RAG · NVIDIA NIM</span>
+            <span class="proj-date">2026</span>
+          </div>
+          <div class="proj-featured-badge">★ DESTACADO</div>
+          <h3 class="proj-title">NVIDIA NIM RAG ENGINE</h3>
+          <p class="proj-desc">
+            Motor RAG de alto rendimiento con Llama-3.1-70B vía NVIDIA NIM API y embeddings
+            nvidia/nv-embedqa-e5-v5. ChromaDB como vector store con persistencia, memoria de
+            conversación, streaming de respuestas y carga batch de documentos.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego/RAG-" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>ChromaDB</span><span>Llama 3.1</span><span>NVIDIA NIM</span><span>pypdf</span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 3 — Old Art -->
+        <div class="proj-card" data-category="ml">
+          <div class="proj-header">
+            <span class="proj-tag">ML · VISIÓN ARTIFICIAL · CNN</span>
+            <span class="proj-date">FEB 2026</span>
+          </div>
+          <h3 class="proj-title">OLD ART</h3>
+          <p class="proj-desc">
+            Modelo de visión artificial para relacionar obras de arte con sus autores mediante
+            transfer learning. Clasificación multiclase sobre dataset histórico de pinturas.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego/old_art" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>TensorFlow</span><span>Keras</span><span>CNN</span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 4 — INFORTEC RRHH -->
+        <div class="proj-card" data-category="ml">
+          <div class="proj-header">
+            <span class="proj-tag">ML · RRHH · CLASIFICACION</span>
+            <span class="proj-date">2025</span>
+          </div>
+          <h3 class="proj-title">PREDICCIÓN ABANDONO EMPLEADOS</h3>
+          <p class="proj-desc">
+            Análisis y modelado sobre el dataset IBM HR (1470 registros, 35 variables) para
+            predecir attrition. EDA completo, preprocesamiento, evaluación con precision/recall/F1
+            e insights accionables para RRHH.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego/RRHH" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Seaborn</span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 5 — Clasificador Zalando -->
+        <div class="proj-card" data-category="ml">
+          <div class="proj-header">
+            <span class="proj-tag">ML · CNN · FASHION</span>
+            <span class="proj-date">2025</span>
+          </div>
+          <h3 class="proj-title">CLASIFICADOR ROPA ZALANDO</h3>
+          <p class="proj-desc">
+            Clasificador de prendas sobre el dataset Fashion-MNIST con redes convolucionales.
+            Pipeline completo de entrenamiento y evaluación de modelos CNN.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego/Clasificador-Zalando" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>TensorFlow</span><span>Fashion-MNIST</span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 6 — Heart Attack -->
+        <div class="proj-card" data-category="ml">
+          <div class="proj-header">
+            <span class="proj-tag">ML · SALUD · PREDICCION</span>
+            <span class="proj-date">2025</span>
+          </div>
+          <h3 class="proj-title">HEART ATTACK RISK</h3>
+          <p class="proj-desc">
+            Modelo de ML para predicción de riesgo cardiovascular con análisis clínico de
+            variables. Enfoque en interpretabilidad y utilidad médica de las predicciones.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego/Heart-Attack" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 7 — ML Créditos -->
+        <div class="proj-card" data-category="ml">
+          <div class="proj-header">
+            <span class="proj-tag">ML · FINANZAS · CLASIFICACION</span>
+            <span class="proj-date">DIC 2025</span>
+          </div>
+          <h3 class="proj-title">ML CRÉDITOS</h3>
+          <p class="proj-desc">
+            Modelo de clasificación multi-variable para anticipar comportamiento de pago
+            de clientes. Análisis de patrones crediticios con múltiples clasificadores supervisados.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+        </div>
+
+        <!-- PROYECTO 8 — MNIST -->
+        <div class="proj-card" data-category="ml">
+          <div class="proj-header">
+            <span class="proj-tag">ML · REDES NEURONALES</span>
+            <span class="proj-date">ENE 2026</span>
+          </div>
+          <h3 class="proj-title">MNIST CLASSIFIER</h3>
+          <p class="proj-desc">
+            Clasificador de dígitos manuscritos con redes neuronales sobre el dataset clásico
+            MNIST. Pipeline desde cero: preprocesado, arquitectura, entrenamiento y evaluación.
+          </p>
+          <div class="proj-footer">
+            <a href="https://github.com/raulrevidiego" class="proj-link" target="_blank">[ REPOSITORIO ]</a>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>Keras</span><span>NumPy</span>
+          </div>
+        </div>
+
+        <!--
+        ┌──────────────────────────────────────────────────┐
+        │  AÑADE AQUÍ TUS NUEVOS PROYECTOS                 │
+        │  Copia cualquier bloque .proj-card de arriba     │
+        │  y rellena los campos marcados                   │
+        └──────────────────────────────────────────────────┘
+        -->
+
+      </div>
+    </section>
+
+    <!-- ░░ FORMACIÓN & CERTS ░░ -->
+    <section id="educacion" class="section">
+      <div class="section-label">// 04 — FORMACION & CERTIFICACIONES</div>
+      <div class="edu-cert-grid">
+
+        <div>
+          <p class="edu-sub-label">EDUCACION</p>
+          <div class="edu-timeline">
+
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-date">ABR — SEP 2026</span>
+                <h3>MÁSTER EVOLVE DATA ANALYST</h3>
+                <p>Evolve Academy — Especialización avanzada en análisis de datos y ML.</p>
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <span class="edu-date">SEP 2021 — SEP 2026</span>
+                <h3>INGENIERÍA INFORMÁTICA</h3>
+                <p>Universidad de Cádiz — TFG pendiente (2026/2027).</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <p class="edu-sub-label">CERTIFICACIONES</p>
+          <div class="certs-list">
+
+            <div class="cert-card">
+              <div class="cert-issuer">ANTHROPIC</div>
+              <h3 class="cert-title">Claude Code in Action</h3>
+              <span class="cert-date">MAY 2026</span>
+              <a href="https://verify.skilljar.com/c/4dufnt9gnmzv" class="proj-link" target="_blank">[ VERIFICAR ]</a>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-issuer">CAMBRIDGE / NIVEL OFICIAL</div>
+              <h3 class="cert-title">Inglés B1 Certificado</h3>
+              <span class="cert-date">2025</span>
+            </div>
+
+            <!--
+            ┌──────────────────────────────────────┐
+            │  AÑADE AQUÍ NUEVAS CERTIFICACIONES   │
+            │  Duplica el bloque .cert-card        │
+            │  cert-issuer → entidad emisora       │
+            │  cert-title  → nombre del cert       │
+            │  cert-date   → MES AÑO               │
+            │  proj-link   → URL verificación      │
+            └──────────────────────────────────────┘
+            -->
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ░░ CONTACTO ░░ -->
+    <section id="contacto" class="section">
+      <div class="section-label">// 05 — CONTACTO</div>
+      <div class="contact-box">
+        <p class="contact-intro">&gt; INICIAR CONEXIÓN...</p>
+        <div class="contact-links">
+          <a href="mailto:revidiego.raul.2002@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>revidiego.raul.2002@gmail.com</span>
+          </a>
+          <a href="https://github.com/raulrevidiego" class="contact-item" target="_blank">
+            <span class="contact-icon">⌥</span>
+            <span>github.com/raulrevidiego</span>
+          </a>
+          <a href="https://www.linkedin.com/in/raul-revidiego-14728a388" class="contact-item" target="_blank">
+            <span class="contact-icon">◈</span>
+            <span>linkedin.com/in/raul-revidiego</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>RAÚL REVIDIEGO © 2026 // <span class="cyan">DATA ANALYST · ML ENGINEER</span> // CÁDIZ, ESP</p>
+      <p class="footer-sub">Construido con HTML · CSS · JS — sin frameworks</p>
+    </footer>
+
+  </div><!-- /main -->
+
+  <script src="script.js"></script>
+</body>
+</html>
